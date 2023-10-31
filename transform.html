@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform.html</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container{
+            height: 200px;
+            width: 400px;
+            border: 2px solid deeppink;
+            background-color: aqua;
+        }
+        .box{
+            height: 200px;
+            width: 400px;
+            border: 2px solid rgb(210, 245, 8);
+            background-color: saddlebrown;
+            transition: transform 5s ease-in-out, translate 3s;
+        }
+        .box:hover{
+            transform: rotate(60deg) scale(0.50);
+            translate: 100px 30px;
+        }
+
+        .grid-container{
+            margin-top: 100px;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+
+        }
+        .grid-container h1{
+            border: 5px solid slateblue;
+            margin: 20px;
+            /* padding: 10px; */
+        }
+        .card-grid{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .card-grid-div{
+            border: 2px solid slateblue;
+            border: none;
+            border-radius: 20px;
+            margin: 50px;
+            padding: 40px;
+            background-color: rgb(241, 238, 240);
+            box-shadow: 10px 20px slateblue;
+        }
+     </style>
+</head>  
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "list.html">List</a></li>
+                <li><a href = "position.html">position</a></li>
+                <li><a href = "overflow.html">Overflow</a></li>
+                <li><a href = "transform.html">Transform</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h5 class="box">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci in alias reprehenderit dolorem quibusdam dignissimos voluptates, odio assumenda neque voluptatum sint, sit suscipit voluptas officia ea. Reiciendis eius ab ipsam consectetur, odit blanditiis labore doloribus porro necessitatibus tempora laudantium alias quae reprehenderit culpa facilis at in libero! Asperiores, excepturi rem voluptatem tenetur totam corporis in dolorem quisquam dolores voluptas? Doloremque quod tempora dolor ad consectetur libero eum quae, voluptatum incidunt commodi distinctio molestiae labore facilis natus odit reiciendis mollitia exercitationem.
+        </h5>
+    </div>
+        <div  class="grid-container">
+            <div>
+                <h1>Mohammad</h1>
+            </div>
+            <div>
+                <h1>Ebrahim</h1>
+            </div>
+            <div>
+                <h1>Sagor</h1>
+            </div>
+            <div>
+                <h1>Sagor</h1>
+            </div>
+            <div>
+                <h1>Sagor</h1>
+            </div>
+            <div>
+                <h1>Sagor</h1>
+            </div>
+        </div>
+<div class="card-grid">
+    <div class="card-grid-div">
+        <img src="images/boy.svg" alt="">
+        <h1>Lorem ipsum dolor</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ullam, aspernatur laudantium similique odio exercitationem minima voluptates ipsam? Voluptates, nesciunt!</p>
+    </div>
+    <div class="card-grid-div">
+        <img src="images/ring.svg" alt="">
+        <h1>Lorem ipsum dolor</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ullam, aspernatur laudantium similique odio exercitationem minima voluptates ipsam? Voluptates, nesciunt!</p>
+    </div>
+    <div class="card-grid-div">
+        <img src="images/water.svg" alt="">
+        <h1>Lorem ipsum dolor</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ullam, aspernatur laudantium similique odio exercitationem minima voluptates ipsam? Voluptates, nesciunt!</p>
+    </div>
+</div>
+</body>
+</html>
